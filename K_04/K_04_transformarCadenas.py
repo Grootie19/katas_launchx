@@ -17,6 +17,7 @@ The highest daylight temperature of the Moon is 127 C."""
 
 # Divide el texto en cada oración
 divText = text.split('\n')
+# print (divText)
 
 # Define palabras clave para busqueda
 firstkw = 'average'
@@ -25,6 +26,9 @@ thirdkw = 'distance'
 
 # Imprime los datos que contengan alguna de las pralabras claves
 for fact in divText:
-    fact.lower
-    if fact.count(firstkw) > 0 or fact.count(secondkw) or fact.count(thirdkw):
-        print(f">{fact}")
+    factMin = fact.lower()
+    if factMin.count(firstkw) > 0 or factMin.count(secondkw) or factMin.count(thirdkw):
+        if factMin.endswith("c."):
+            fact = fact.replace('C', 'Celsius')
+        print(f"> {fact}")
+
