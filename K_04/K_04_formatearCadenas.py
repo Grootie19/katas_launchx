@@ -11,5 +11,25 @@
 
 satName = "Moon"
 gravity = 0.00162
-planet = "Earth"
+planetName = "Earth"
+
+# satName = "Ganímedes"
+# gravity = 0.00143
+# planetName = "Marte"
+
+# Titulo
+
+titulo = (f"Gravity Facts about {satName}\n")
+
+# Plantilla
+datos = (f"""-----------------------------
+
+Planet Name: > {planetName}
+Gravity on {satName}: > {gravity*1000} m/s2""")
+
+combText = (f"{titulo}{datos}")
+
+print (combText)
+
+# print (combText.format(satName = satName, gravity = gravity*1000, planetName = planetName))
 
