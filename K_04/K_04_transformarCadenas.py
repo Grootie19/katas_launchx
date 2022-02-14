@@ -9,12 +9,14 @@
 # On average, the Moon moves 4cm away from the Earth every year. This yearly drift is not significant enough to cause immediate effects on Earth. The highest daylight temperature of the Moon is 127 C."""
 
 # Texto dato
-text = """Interesting facts about the Moon. The Moon is Earth's only satellite. There are several interesting facts about the Moon and how it affects life here on Earth.
-On average, the Moon moves 4cm away from the Earth every year. This yearly drift is not significant enough to cause immediate effects on Earth. The highest daylight temperature of the Moon is 127 C."""
+text = """Interesting facts about the Moon. The Moon is Earth's only satellite.
+There are several interesting facts about the Moon and how it affects life here on Earth.
+On average, the Moon moves 4cm away from the Earth every year.
+This yearly drift is not significant enough to cause immediate effects on Earth.
+The highest daylight temperature of the Moon is 127 C."""
 
 # Divide el texto en cada oración
-divText = text.split('.')
-#print (divText)
+divText = text.split('\n')
 
 # Define palabras clave para busqueda
 firstkw = 'average'
@@ -25,4 +27,4 @@ thirdkw = 'distance'
 for fact in divText:
     fact.lower
     if fact.count(firstkw) > 0 or fact.count(secondkw) or fact.count(thirdkw):
-        print(fact)
+        print(f">{fact}")
