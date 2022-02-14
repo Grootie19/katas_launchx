@@ -9,4 +9,7 @@
 # Datos a utilizar
 # Moon, gravedad 0.00162 km/s, planet Earth
 
+satName = "Moon"
+gravity = 0.00162
+planet = "Earth"
 
