@@ -9,9 +9,9 @@
 # Datos a utilizar
 # Moon, gravedad 0.00162 km/s, planet Earth
 
-satName = "Moon"
-gravity = 0.00162
-planetName = "Earth"
+satName = "Ganimedes"
+gravity = 0.00143
+planetName = "Marte"
 
 # satName = "Ganímedes"
 # gravity = 0.00143
@@ -30,4 +30,12 @@ combText = (f"{titulo}{datos}")
 
 print(combText)
 
-# print (combText.format(satName = satName, gravity = gravity*1000, planetName = planetName))
+plantillaNueva = """
+Gravity Facts about {satName}
+-------------------------------
+Planet Name: > {planetName}
+Gravity on {satName}: > {gravity} m/s2
+"""
+
+# Bloque con relevancia en pynb
+print(plantillaNueva.format(planetName=planetName, satName=satName, gravity=gravity*1000))

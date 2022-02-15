@@ -1,4 +1,3 @@
-# Text
 # Datos interesantes acerca de a Luna
 # La Luna es el unico satelite natural del planeta Tierra
 # Estos son los datos más interesantes sobre la Luna y como afecta la vida aquí en la Tierra
