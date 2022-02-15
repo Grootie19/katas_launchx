@@ -1,6 +1,5 @@
 # Crea la lista de planetas
-from operator import index
-from turtle import position
+
 
 
 planetas = ['Mercurio', 'Venus', 'Tierra', 'Marte', 'Jupiter', 'Saturno', 'Neptuno']
