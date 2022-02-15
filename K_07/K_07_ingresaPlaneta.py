@@ -1,7 +1,6 @@
 # Crear un programa que permita al usuario añadir planetas a una lista
 
 # Declaracion de variables
-from hashlib import new
 
 new_planet = ''
 planets = []
