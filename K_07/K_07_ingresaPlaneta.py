@@ -10,4 +10,5 @@ while new_planet.lower() != 'done':
     planets.append(new_planet)
     new_planet = input("Nombre del planeta a agregar: ")
 
+planets.pop(0)
 print (planets)
