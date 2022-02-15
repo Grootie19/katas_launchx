@@ -2,10 +2,10 @@
 # utilizar inputs
 
 # Variables
-inNamePlanet_01 = input("Nombre del primer Planeta")
-inNamePlanet_02 = input("Nombre del segundo Planeta")
-inDistPlanet_01 = input("Distancia al sol (primer planeta)")
-inDistPlanet_02 = input("Distancia al sol (segundo planeta)")
+inNamePlanet_01 = input("Nombre del primer Planeta: ")
+inDistPlanet_01 = input("Distancia al sol: ")
+inNamePlanet_02 = input("Nombre del segundo Planeta: ")
+inDistPlanet_02 = input("Distancia al sol: ")
 
 # Input devulve valores de tipo cadena
 
@@ -13,4 +13,3 @@ inDistPlanet_02 = input("Distancia al sol (segundo planeta)")
 inDistPlanet_01 = int(inDistPlanet_01)
 inDistPlanet_02 = int(inDistPlanet_02)
 
-print(inDistPlanet_01)
