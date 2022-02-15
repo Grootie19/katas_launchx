@@ -14,8 +14,8 @@ inDistPlanet_02 = int(input("Distancia al sol: "))
 # inDistPlanet_02 = int(inDistPlanet_02)
 # Elima este bloque ta que se puede hacer la conversión desde la solicitud de los datos
 
-suma = inDistPlanet_01 - inDistPlanet_02
+operacion = inDistPlanet_01 - inDistPlanet_02
 
-print(f"La distancia entre {inNamePlanet_01} y {inNamePlanet_02} es: {abs(suma)}")
+print(f"La distancia entre {inNamePlanet_01} y {inNamePlanet_02} es: {abs(operacion)}")
 
 
