@@ -17,11 +17,12 @@ planet_moons = {
     'makemake' : 1,
     'eris' : 1,
 }
-moons = 0
+total_moons = 0
 planets = (len(planet_moons))
 
-for lunas in planet_moons.values():
-    moons = moons + lunas
+for moons in planet_moons.values():
+    total_moons = total_moons + moons
 
-print(planets)
-print(moons)
+print(f"El nuestro sistema solar hay {planets}")
+print(f"Y existen {total_moons} lunas")
+print(f"Se podría decir que en promedio un planeta tiene {round(total_moons/planets)} lunas, pero nah")
