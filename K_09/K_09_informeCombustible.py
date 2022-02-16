@@ -2,9 +2,6 @@
 
 # Funcion para leer 3 tanques de combustible y calcular el promedio
 
-from audioop import lin2adpcm
-
-
 def combustible(cantidad):
     tCombustible = sum(cantidad)
     return tCombustible
