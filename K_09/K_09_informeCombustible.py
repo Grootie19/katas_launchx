@@ -4,6 +4,10 @@
 
 def combustible(dep1, dep2, dep3):
     tCombustible = dep1 + dep2 + dep3
-    return round(tCombustible/3, 2)
+    return tCombustible
+    
+def promedio(tCombustible):
+    avCombustible = round (tCombustible/3, 2)
+    return avCombustible
 
-print(combustible(0, 1, 1))
+print(promedio(combustible(0, 1, 1)))
