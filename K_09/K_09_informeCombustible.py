@@ -2,12 +2,20 @@
 
 # Funcion para leer 3 tanques de combustible y calcular el promedio
 
-def combustible(dep1, dep2, dep3):
-    tCombustible = dep1 + dep2 + dep3
-    return tCombustible
-    
-def promedio(tCombustible):
-    avCombustible = round (tCombustible/3, 2)
-    return avCombustible
+from audioop import lin2adpcm
 
-print(promedio(combustible(0, 1, 1)))
+
+def combustible(cantidad):
+    tCombustible = sum(cantidad)
+    return tCombustible
+
+def promedio(*argu):
+    prom = combustible(argu) / len(argu)
+    return prom
+
+
+print(round(promedio(6, 5, 5), 2))
+    
+
+
+
