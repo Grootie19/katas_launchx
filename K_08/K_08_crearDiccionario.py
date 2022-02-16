@@ -5,3 +5,4 @@ planeta = {
     'lunas' : 1
 }
 
+print(f"Nombre del planeta: {planeta['nombre']}\nNumero de lunas: {planeta['lunas']}")
