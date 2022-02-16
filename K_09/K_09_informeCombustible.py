@@ -6,6 +6,7 @@ def combustible(cantidad):
     tCombustible = sum(cantidad)
     return tCombustible
 
+# La funcion recibe los argumentos que el usuario introduzca, no importa cuantos
 def promedio(*argu):
     prom = combustible(argu) / len(argu)
     return prom
