@@ -23,6 +23,6 @@ planets = (len(planet_moons))
 for moons in planet_moons.values():
     total_moons = total_moons + moons
 
-print(f"El nuestro sistema solar hay {planets}")
+print(f"El nuestro sistema solar hay {planets} planetas")
 print(f"Y existen {total_moons} lunas")
 print(f"Se podría decir que en promedio un planeta tiene {round(total_moons/planets)} lunas, pero nah")
