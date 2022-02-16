@@ -3,7 +3,7 @@
 
 # Planetas y lunas
 
-nMoonPlanet = {
+planet_moons = {
     'mercurio' : 0,
     'venus' : 0,
     'tierra' : 1,
@@ -17,3 +17,11 @@ nMoonPlanet = {
     'makemake' : 1,
     'eris' : 1,
 }
+moons = 0
+planets = (len(planet_moons))
+
+for lunas in planet_moons.values():
+    moons = moons + lunas
+
+print(planets)
+print(moons)
