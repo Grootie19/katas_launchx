@@ -5,15 +5,32 @@
 # Destino
 # Tanque externo
 # Tanque interno
+from datetime import timedelta, datetime
 
-def informeMision (hLaunch, tVuelo, nDestino, cTanqueExt, cTanqueInt):
-    
-    return f""""La hora de lanzamiento aproximada es: {hLaunch}
-    Tiempo de vuelo esperado: {tVuelo}
-    Destino:  {nDestino}
-    Capacidad del tanque externo: {cTanqueExt}
-    Capacidad del tanque interno: {cTanqueInt}
-    """
 
-print(informeMision('14:00', 50, 'Luna', 800, 500))
+def informeMision(nDestino,  tVuelo, *minToLauch, **tanques):
+    combustibleTotal = 0
+    minutos = sum(minToLauch)
+    hActual = datetime.now()
+    hSalida = timedelta(minutes=minutos) + datetime.now()
+    llegada = hSalida + timedelta(minutes=tVuelo)
+
+    for capTanque in tanques.values():
+        combustibleTotal += capTanque
+
+    informe = f"""- Faltan: {minutos} minutos para el prelanzamiento
+- Hora de despegue estimada: {hSalida.strftime("%H: %M")}
+- El tiempo de vuelo esperado es de: {tVuelo} minutos
+- Destino:  {nDestino}
+- Se estima llegar el dia: {llegada.strftime("%A")} a las {llegada.strftime("%H: %M")} 
+- La nave cuenta con {combustibleTotal} toneladas de combustible
+distribuidos en {len(tanques)}
+"""
+
+    for nTanque, capacidad in tanques.items():
+        informe += f"   > {nTanque} con una capacidad de {capacidad} toneladas\n"
+
+    return informe
+
+print(informeMision('Luna', 120, 60, 30, 20, externo = 100, interno = 60, adicional = 20))
 
