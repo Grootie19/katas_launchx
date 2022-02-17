@@ -11,7 +11,6 @@ from datetime import timedelta, datetime
 def informeMision(nDestino,  tVuelo, *minToLauch, **tanques):
     combustibleTotal = 0
     minutos = sum(minToLauch)
-    hActual = datetime.now()
     hSalida = timedelta(minutes=minutos) + datetime.now()
     llegada = hSalida + timedelta(minutes=tVuelo)
 
@@ -32,5 +31,5 @@ distribuidos en {len(tanques)}
 
     return informe
 
-print(informeMision('Luna', 120, 60, 30, 20, externo = 100, interno = 60, adicional = 20))
+print(informeMision('Luna', 120, 60, 30, 30, externo = 100, interno = 60, adicional = 20))
 
